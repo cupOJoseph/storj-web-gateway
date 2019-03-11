@@ -2,23 +2,17 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
-	"os"
-	"path/filepath"
+	"strconv"
 )
 
+func handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Received request for path: %s", r.URL.Path[1:])
+}
+
 func main() {
-	pwd, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	if err != nil {
-		log.Fatal(err)
-	}
-	port := ""
-	if len(os.Args) == 2 {
-		port = ":" + os.Args[1]
-	} else {
-		port = ":8081"
-	}
-	fmt.Println("Server started at http://localhost:" + port[1:])
-	log.Fatal(http.ListenAndServe(port, http.FileServer(http.Dir(pwd))))
+	port := strconv.Itoa(5000)
+	fmt.Printf("Listening to traffic on port " + port + "\n")
+	http.HandleFunc("/", handler)
+	http.ListenAndServe(":"+port, nil)
 }
