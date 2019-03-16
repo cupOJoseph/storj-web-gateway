@@ -16,7 +16,8 @@ TODO:
 MIT. Use as you will, implement your own and let us know how it goes.
 
 ## Special Thanks
-TODO: list contributors
-RTrade, who made their own Storj Gateway, and heavily inspired the direction this one took towards implementation.
+TODO: 
+- list contributors
+- [RTrade](https://www.rtradetechnologies.com/en/), who made their own Storj Gateway, and heavily inspired the direction this one took towards implementation.
 
 ## Contributing
