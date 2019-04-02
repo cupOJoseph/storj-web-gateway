@@ -1,5 +1,5 @@
 # storj-ipfs-gateway
-An IPFS gateway with a storj implementation backend
+An IPFS gateway with a [Storj](http://storj.io) implementation as a backend. 
 
 ## Attribution 
 This experimental ipfs plugin combines code from and is heavily inspired by [RTrade's storj ipfs plugin](https://github.com/RTradeLtd/storj-ipfs-ds-plugin). It also uses code from https://github.com/ipfs/go-ds-s3 and https://github.com/storj/storj. 
