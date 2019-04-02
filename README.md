@@ -1,5 +1,5 @@
 # storj-ipfs-gateway
-An IPFS gateway with a [Storj](http://storj.io) implementation as a backend. 
+An IPFS gateway with a [Storj](http://storj.io) implementation as a backend. This allows for easily viewing files stored in the Storj network directly in a web browser.
 
 ## Attribution 
 This experimental ipfs plugin combines code from and is heavily inspired by [RTrade's storj ipfs plugin](https://github.com/RTradeLtd/storj-ipfs-ds-plugin). It also uses code from https://github.com/ipfs/go-ds-s3 and https://github.com/storj/storj. 
