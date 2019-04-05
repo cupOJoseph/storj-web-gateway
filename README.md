@@ -31,7 +31,9 @@ when you ./build/ipfs add *, the file will be feed to storj
 
 
 
-# Usage of shell script under ./shell
+# Usage of installer scripts
+
+Scripts for installing can be found under ./shell. Install Storj first, and then the IPFS gateway
 
 Assume golang (>=1.11) has been setup.
 
