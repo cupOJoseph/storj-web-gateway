@@ -50,7 +50,7 @@ If all successfully, You should switch to ~/src/github.com/ipfs-s3c-storj-plugin
 
 
 I have recorded two tty sessions under ./record directory
-To replay these two records, you should install ttyrec, in Unbuntu, run following command
+To replay these two records, you should install ttyrec, in Ubuntu, run following command
 
 ```sudo apt-get install ttyrec```
 
