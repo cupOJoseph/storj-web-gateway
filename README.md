@@ -1,18 +1,18 @@
 # storj-ipfs-gateway
 An IPFS gateway with a [Storj](http://storj.io) implementation as a backend. This allows for easily viewing files stored in the Storj network directly in a web browser.
 
-## Attribution 
-This experimental ipfs plugin combines code from and is heavily inspired by [RTrade's storj ipfs plugin](https://github.com/RTradeLtd/storj-ipfs-ds-plugin). It also uses code from https://github.com/ipfs/go-ds-s3 and https://github.com/storj/storj. 
+## Attribution
+This experimental ipfs plugin combines code from and is heavily inspired by [RTrade's storj ipfs plugin](https://github.com/RTradeLtd/storj-ipfs-ds-plugin). It also uses code from https://github.com/ipfs/go-ds-s3 and https://github.com/storj/storj.
 
 Special thanks to [RTrade](https://www.rtradetechnologies.com/) for supporting this project and inspiring the development direction it has taken so far.
 
-## Usage 
+## Installation
 
-clone this repo to your $GOPATH/src/github.com 
+clone this repo to your $GOPATH/src/github.com
 
-cd $GOPATH/src/github.com/ipfs-s3c-storj-plugin 
+cd $GOPATH/src/github.com/ipfs-s3c-storj-plugin
 
-gx install --local 
+gx install --local
 (here I personnally gx publish 3 ipfs packages:go-ipfs-config,go-ipfs and iptb.  maybe in your site it is hard to get these three packages
 just check https://github.com/zyfrank/go-ipfs, https://github.com/zyfrank/go-ipfs-config and https://github.com/zyfrank/iptb, clone to your local env. ,switch to branch storj-s3c-plugin, then use gx publish -f to your local IPFS node, so gx install --local can find these three packages)
 
@@ -26,12 +26,9 @@ start your test storj env. by using storj-sim network run
 
 now start ipfs daemon  ./build/ipfs daemon
 
-when you ./build/ipfs add *, the file will be feed to storj
+when you ./build/ipfs add `*`, the file will be fed to storj
 
-
-
-
-# Usage of installer scripts
+### Usage of installer scripts
 
 Scripts for installing can be found under ./shell. Install Storj first, and then the IPFS gateway
 
@@ -54,6 +51,6 @@ To replay these two records, you should install ttyrec, in unbuntu, run followin
 ```sudo apt-get install ttyrec```
 
 Now
-```ttyplay ./record/storjInstallRec``` can replay the storj setup process, during replay, ctrl+'f' can be used to increase playback speed. 
+```ttyplay ./record/storjInstallRec``` can replay the storj setup process, during replay, ctrl+'f' can be used to increase playback speed.
 
 ```ttyplay ./record/ipfs-s3c-storj-pluginInstallRec``` can replay the ipfs-s3c-storj plugin setup and some ipfs command test process.
