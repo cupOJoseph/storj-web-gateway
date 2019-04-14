@@ -49,8 +49,8 @@ Now ```./shell/setupIpfsStorjPlugin.sh``` can be run to setup ipfs-s3c-storj-plu
 If all successfully, You should switch to ~/src/github.com/ipfs-s3c-storj-plugin/build and use new built ipfs command. Now you can try ```./ipfs add```, ```./ipfs cat```, ```./ipfs ls```, ```./ipfs get``` etc.  
 
 
-I have recorded two tty sessiones under ./record directory
-To replay these two records, you should install ttyrec, in unbuntu, run following command
+I have recorded two tty sessions under ./record directory
+To replay these two records, you should install ttyrec, in Unbuntu, run following command
 
 ```sudo apt-get install ttyrec```
 
