@@ -6,6 +6,12 @@ This experimental ipfs plugin combines code from and is heavily inspired by [RTr
 
 Special thanks to [RTrade](https://www.rtradetechnologies.com/) for supporting this project and inspiring the development direction it has taken so far.
 
+## Usage of a Storj Gateway
+Storj gives us the decentralized cloud storage, compatible with S3 buckets, through their service [Tardigrade](https://tardigrade.io/). This gateway acts as a web-based explorer for the files that are stored in Storj services like Tardigrade. The purpose of keeping this gateway running is to demonstrate how fast and easy storage is on IPFS systems like Storj.  We also provide instructions on using this project to setup your own gateway.
+
+### Example Uses
+After setting up your own gateway you could use it to create an online ebook store, with ebook files stored with Tardigrade. Or you could use a gateway like this to run a social art platform with persistent storage. 
+
 ## Installation
 
 Clone this repo with `git install https://github.com/jschiarizzi/storj-ipfs-gateway.git` to the folder in your GOPATH `$GOPATH/src/github.com`. By default this should be `~/go/bin`
