@@ -5,6 +5,8 @@ Clone this repo with `git install https://github.com/jschiarizzi/storj-ipfs-gate
 Move into the folder:
 `cd $GOPATH/src/github.com/ipfs-s3c-storj-plugin`
 
+Enable Go Mod.
+
 Install locally
 `gx install --local`
 Here we use gx to publish 3 ipfs packages:go-ipfs-config,go-ipfs and iptb.  Maybe in your site it is hard to get these three packages
