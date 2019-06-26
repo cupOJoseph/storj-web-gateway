@@ -4,24 +4,46 @@
   <head>
     <meta charset="utf-8" />
 
-    <title></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17-beta.0/vue.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Web Gateway Storj</title>
   </head>
 
   <body>
-    <h1>IPFS Gateway</h1>
-    <br>
-    myBucket
-    <table>
-      <tr>
-        <th><a href="http://live.storjgateway.com:3001/ipfs/myBucket/cat.png">cat.png</a></th>
-      </tr>
-    </table>
-    <br>
-    other-bucket
-    <table>
-      <tr>
-        <th><a href="http://live.storjgateway.com:3001/ipfs/other-bucket/cat.png">cat.png</a></th>
-      </tr>
-    </table>
+    <div class="title">
+      <h1>Storj Web Gateway</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="sect">
+          <h2>Public Uploads</h2>
+          <p>These are files uploaded to the Storj network by anyone. They have persistant storage and can be easily accessed.</p>
+        </div>
+      </div>
+    </div>
+    <div id="vue" class="explorer">
+      <folder-contents
+        v-for="folder in homeFolders"
+        :folder="folder"
+        :children-of="childrenOf"
+      ></folder-contents>
+    </div>
+
+    <br><hr><br>
+
+    <div class="container">
+      <div class="row">
+        <div class="sect">
+          <h2>Upload your own files</h2>
+          <p>You can upload files here, to test how easy storage on the Storj network is. This upload sends them to <a class="code" href="http://live.storjgateway.com:3001/upload">http://live.storjgateway.com:3001/upload</a>. They are public, will be displayed here, and will occassionally be deleted to make space.</p>
+        </div>
+      </div>
+      <div class="uploader">
+        
+      </div>
+    </div>
+
+  <script type="text/javascript" src="scripts/files.js">  </script>
   </body>
 </html>
